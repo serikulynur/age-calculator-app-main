@@ -1,0 +1,84 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /*Primary*/
+    --Purple: hsl(259, 100%, 65%);
+    --Light-red: hsl(0, 100%, 67%);
+
+    /*Neutral*/
+    --White: hsl(0, 0%, 100%);
+    --Off-white: hsl(0, 0%, 94%);
+    --Light-grey: hsl(0, 0%, 86%);
+    --Smokey-grey: hsl(0, 1%, 44%);
+    --Off-black: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--Off-white);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: calc((45 / 16) * 1rem) calc((25 / 16) * 1rem);
+    gap: calc((30 / 16) * 1rem);
+    border-radius: calc((30 / 16) * 1rem);
+    border-bottom-right-radius: calc((100 / 16) * 1rem);
+    margin: calc((100 / 16) * 1rem);
+    background-color: var(--White);
+}
+
+hr {
+    color: var(--Off-white);
+    margin: calc((30 / 16) * 1rem) 0;
+
+}
+
+.input-container {
+    display: flex;
+    gap: calc((10 / 16) * 1rem);
+    font-family: 'Poppins';
+    font-size: calc((12 / 16) * 1rem);
+    color: var(--Smokey-grey);
+}
+
+.input-container p {
+    letter-spacing: calc((4 / 16) * 1rem);
+    margin: calc((4 / 16) * 1rem) 0;
+}
+
+input {
+    width: calc((80 / 16) * 1rem);
+    border-radius: calc((10 / 16) * 1rem);
+    padding: calc((10 / 16) * 1rem);
+    font-size: calc((20 / 16) * 1rem);
+    border: calc((2 / 16) * 1rem) solid var(--Light-grey);
+}
+
+.output-container {
+    font-size: calc((45 / 16) * 1rem);
+}
+
+.output-container p {
+    font-family: 'Poppins';
+    font-weight: 800;
+    font-style: italic;
+}
+
+span {
+    color: var(--Purple);
+}
+
+hr::after {
+    /* content: url(/assets/images/icon-arrow.svg); */
+}

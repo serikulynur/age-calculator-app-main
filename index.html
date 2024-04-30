@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <script src="app.js"></script>
+  
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+<body>
+  <main class="flex-center main">
+    <div class="container">
+      <div class="input-container">
+        <div class="data day">
+          <p>DAY</p>
+          <input type="month" min="01" max="12" value="DD">
+        </div>
+        <div class="data month">
+          <p>MONTH</p>
+          <input type="month" min="01" max="12" value="MM">
+        </div>
+        <div class="data year">
+          <p>YEAR</p>
+          <input type="year" value="YY">
+        </div>
+      </div>
+      <hr>
+      <div class="output-container">
+        <p><span>--</span> years</p>
+        <p><span>--</span> months</p>
+        <p><span>--</span> days</p>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
