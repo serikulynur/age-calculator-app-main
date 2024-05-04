@@ -14,29 +14,56 @@
   <title>Frontend Mentor | Age calculator app</title>
 </head>
 <body>
-  <main class="flex-center main">
-    <div class="container">
+    <main class="container">
       <div class="input-container">
-        <div class="data day">
-          <p>DAY</p>
-          <input type="month" min="01" max="12" value="DD">
+        <div>
+            <p class="letter-spacing">DAY</p>
+            <input type="month" min="01" max="12" placeholder="DD">
+            <p class="error-message day-required hidden">
+              This field is required
+            </p>
+            <p class="error-message day-invalid hidden">
+              Must be a valid day
+            </p>
+            <p class="error-message date-invalid hidden">
+              Must be a valid date
+            </p>
         </div>
-        <div class="data month">
-          <p>MONTH</p>
-          <input type="month" min="01" max="12" value="MM">
+        <div >
+            <p class="letter-spacing">MONTH</p>
+            <input type="month" min="01" max="12" placeholder="MM">
+            <p class="error-message month hidden">
+              This field is required
+            </p>
+            <p class="error-message month hidden">
+              Must be a valid month
+            </p>
+            <p class="error-message date-invalid hidden">
+              Must be a valid date
+            </p>
         </div>
-        <div class="data year">
-          <p>YEAR</p>
-          <input type="year" value="YY">
+        <div>
+            <p class="letter-spacing">YEAR</p>
+            <input type="year" placeholder="YYYY">
+            <p class="error-message year-required hidden">
+              This field is required
+            </p>
+            <p class="error-message year-invalid hidden">
+              Must be a valid day
+            </p>
+            <p class="error-message date-invalid hidden">
+              Must be a valid year
+            </p>
         </div>
+        <button>
+          <img src="/assets/images/icon-arrow.svg">
+        </button>
       </div>
-      <hr>
       <div class="output-container">
         <p><span>--</span> years</p>
         <p><span>--</span> months</p>
         <p><span>--</span> days</p>
       </div>
-    </div>
-  </main>
+    </main>
 </body>
 </html>
