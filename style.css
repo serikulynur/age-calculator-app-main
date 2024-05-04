@@ -31,6 +31,7 @@ main {
     border-radius: calc((30 / 16) * 1rem);
     border-bottom-right-radius: calc((100 / 16) * 1rem);
     margin: calc((100 / 16) * 1rem) calc((20 / 16) * 1rem);
+    margin-top: calc((20 / 16) * 1rem);
     background-color: var(--White);
     max-width: calc((600 / 16) * 1rem);
 }
@@ -118,6 +119,15 @@ button:hover {
     gap: calc((10 / 16) * 1rem);
 }
 
+h1 {
+    justify-self: center;
+    margin-top: calc((100 / 16) * 1rem);
+    font-size: calc((40 / 16) * 1rem);
+    font-family: 'Poppins';
+    font-weight: 800;
+    /* font-style: italic; */
+}
+
 @media(min-width: 700px) {
     .input-container {
         display: flex;
@@ -143,5 +153,9 @@ button:hover {
     .output-container {
         font-size: calc((60 / 16) * 1rem);
         line-height: calc((70 / 16) * 1rem);
+    }
+
+    h1 {
+        font-size: calc((70 / 16) * 1rem);
     }
 }
